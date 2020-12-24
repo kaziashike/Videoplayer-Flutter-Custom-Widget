@@ -4,7 +4,7 @@
 
 Installation:  
 
-dependencies:
+dependencies:  
   __chewie: <latest_version>   
   video_player: <latest_version>__
 
