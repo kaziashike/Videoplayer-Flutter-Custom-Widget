@@ -53,9 +53,9 @@ class _VideoPlayerExtendedState extends State<VideoPlayerExtended> {
 
 class PlayVideoNetwork extends StatefulWidget {
   final String address;
-  final Bool isLoop;
+  final bool isLoop;
 
-  const PlayVideoNetwork({@required this.address, @required this.isloop});
+  const PlayVideoNetwork({@required this.address, @required this.isLoop});
   @override
   _PlayVideoNetworkState createState() => _PlayVideoNetworkState();
 }
@@ -64,17 +64,18 @@ class _PlayVideoNetworkState extends State<PlayVideoNetwork> {
   @override
   Widget build(BuildContext context) {
     return VideoPlayerExtended(
-      isloop: widget.isloop,
-      videoPlayerController: VideoPlayerController.network(widget.addess),
+      isloop: widget.isLoop,
+      videoPlayerController: VideoPlayerController.network(widget.address),
     );
   }
 }
 
 class PlayVideoAsset extends StatefulWidget {
   final String address;
-  final Bool isLoop;
+  final bool isLoop;
 
-  const PlayVideoAsset({@required this.address, @required this.isloop});
+  const PlayVideoAsset({@required this.address, @required this.isLoop});
+
   @override
   _PlayVideoAssetState createState() => _PlayVideoAssetState();
 }
@@ -83,7 +84,7 @@ class _PlayVideoAssetState extends State<PlayVideoAsset> {
   @override
   Widget build(BuildContext context) {
     return VideoPlayerExtended(
-      isloop: widget.isloop,
+      isloop: widget.isLoop,
       videoPlayerController: VideoPlayerController.asset(widget.address),
     );
   }
