@@ -11,7 +11,7 @@ dependencies:
 
 
 
-Download the "videoplayer.dart" file and put this on your project lib folder.  
+Download the __"videoplayer.dart"__ file and put this on your project lib folder.  
 
 Now on the Container( where you want to display the video ), just type PlayVideoAsset(), or PlayVideoNetwork()... this requires 2 parameters, 1. String: address , 2. Bool: Loop on/off  
   
